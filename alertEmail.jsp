@@ -38,14 +38,14 @@
         message.setFrom(new InternetAddress("satheesh.selvanathan@tu-dortmund.de"));
         message.setRecipients(Message.RecipientType.TO,
                 InternetAddress.parse("satheesh.retros@gmail.com"));
-        message.setSubject("Test mail from Java");
-        message.setText("Hello. this is a test");
+        message.setSubject("MINIS Failure");
+        message.setText("One or many of the Modules of the MINIS system encountered an error or Hardware failure");
  
         Transport transport = emailSession.getTransport("smtps");
         transport.connect("unimail.tu-dortmund.de", username, password);
         transport.sendMessage(message, message.getAllRecipients());
  
-        result = "Successfully sent email";
+        result = "Sent an Alert Email";
  
        } catch (MessagingException e) {
         result = "Unable to send email";
@@ -57,7 +57,7 @@
 </head>
 <body>
     <center>
-        <h1>Send Email using JSP</h1>
+        <h1>MINIS Failure Alert Email</h1>
     </center>
     <p align="center">
         <%

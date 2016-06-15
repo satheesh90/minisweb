@@ -15,6 +15,6 @@
         <img src="IMG-INF/flw_logo.png" width="186px" height="32px" align="right">
     <br><center><img src="IMG-INF/c_new.png" width="152,1px" height="90px"></center>
         
-        <h1><center>MINIS - Multi-agent Miniaturised Logistics System</center></h1>
+        <h1><center>Multi-agent Miniaturised Logistics System</center></h1>
     </body>
 </html>

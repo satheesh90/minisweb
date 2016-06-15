@@ -11,8 +11,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>MINIS Status</title>
     </head>
+    <style type="text/css">
+               body {
+              font-family: monofur;
+              }
+    </style>
     <body>
     <center><h1>MINIS MODULES</h1></center>
-    
+    <!--SHow how the modules are connected to each other. And provide PROCEED button to runminis-->
     </body>
 </html>

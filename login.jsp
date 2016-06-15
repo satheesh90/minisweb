@@ -11,17 +11,30 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>MINIS</title>
     </head>
+    <style type="text/css">
+               body {
+              font-family: Droid Sans;
+              }
+              body {
+    background-image: url("IMG-INF/background222.png");
+    background-repeat: no-repeat;
+    background-position: 360px 250px;
+    background-attachment: fixed;
+                    }
+              
+    </style>
+    
     <body>
         <jsp:include page='banner.jsp'></jsp:include>
-        <center>
-            <h2>Enter the Login details</h2>
+        <div align="center">
+            <!--<h2>Enter the Login details</h2>-->
             <form action="loginc.jsp" method="post">
             <br/>Username  <input type="text" name="username">
             <br/>
             <br/>Password  <input type="password" name="password">
             <br/>
-            <br/><input type="submit" value="Submit">
+            <br/><input type="submit" value="Login!">
             </form>
-        </center>
+        </div>
     </body>
 </html>

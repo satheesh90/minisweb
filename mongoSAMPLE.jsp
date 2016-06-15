@@ -28,15 +28,18 @@
     <%
                 try {
                
-        Mongo mongo = new Mongo("129.217.193.182",38128);
+       // Mongo mongo = new Mongo("129.217.193.182",38128);
+                Mongo mongo = new Mongo("localhost");
+
 
         DB db;
-        db = mongo.getDB("test");
+        db = mongo.getDB("testdb");
         if(db!=null)
-        out.println("Success");
+        {out.println("Success");}
             
        DBCollection coll = db.getCollection("mycol");
-         out.println("Collection mycol selected successfully");
+         if(coll!=null)
+         {out.println("Collection mycol selected successfully");}
 			
          BasicDBObject doc = new BasicDBObject("title", "MongoDB").
             append("description", "database").
@@ -45,7 +48,10 @@
             append("by", "tutorials point");
 				
          coll.insert(doc);
-         out.println("Document inserted successfully");
+         if(doc!=null)
+             out.println("Document inserted successfully");
+         else
+             out.println("Failed insert");
         
         
         

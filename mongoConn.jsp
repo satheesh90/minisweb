@@ -26,8 +26,9 @@
     <body>
         <%
         try {
-        Mongo mongo = new Mongo("129.217.193.182",38128);
-//        out.println("Success");
+       // Mongo mongo = new Mongo("129.217.193.182",38128);
+        Mongo mongo = new Mongo("localhost",38128);
+        out.println("Success");
             } catch (MongoException e) {
               e.printStackTrace();
                     }
